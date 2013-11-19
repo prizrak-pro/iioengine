@@ -1012,6 +1012,7 @@ var iio = {};
    Rect.prototype.setSize = function(w,h){
       h=h||w.y||w||0;
       w=w.x||w||0;
+      this.redraw=true;
       this.height=h;
       this.width=w;
       this.originToLeft=-this.width/2;
